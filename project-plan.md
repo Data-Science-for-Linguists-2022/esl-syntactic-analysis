@@ -10,6 +10,9 @@ The goal is to determine how quantitative measures of syntactic complexity diffe
 The project will utilize the [PELIC data set](https://github.com/ELI-Data-Mining-Group/PELIC-dataset), which is a large corpus of writing samples from ESL learners who participated in Pitt's Intensive English Program.
 The data has already been organized and tagged, so the bulk of future work will involve statistical and linguistic analysis rather than data cleaning.
 
+I also plan to utilize the Tool for the Automatic Analysis of Syntactic Sophistication and Complexity (TAASCC), a syntactic analysis tool, to obtain various numerical measures of syntactic complexity.
+These data points will likely be added to the rest of the PELIC data for later analysis.
+
 ## Analysis
 
 The end goal is to analyze the statistical significance of the differences in quantitative measures of syntactic complexity between learners with different L1s.
