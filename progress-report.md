@@ -70,3 +70,14 @@ Kyle, K. (2006). *Measuring syntactic development in L2 writing: Fine grained in
 Lu, X. (2010). Automatic analysis of syntactic complexity in second language writing. International Journal of Corpus Linguistics, 15(4):474-496.
 
 The latter citation shall be included because some of the syntactic features that I've chosen to analyze come from the Syntactic Complexity Analyzer feature of TAASCC, usage of which requires attribution to the original author (not the same author as TAASCC).
+
+## April 12 (Third Progress Report)
+
+The previous progress report focused on the initial exploration of TAASSC and the syntactic measures that they produce, while this progress report focused on the preparation and initial analysis of the final data.
+During the exploratory analysis of the syntactic measures, I made sure to note outliers, as the previous progress report indicated that they may have been incorrectly parsed by TAASSC.
+The sensitivity of this program to ESL English is something that I'll just have to live with (and something that I plan to note in my final presentation).
+
+Since TAASSC would be so incredibly slow to process the entire PELIC dataset, I ultimately decided to only work with what's essentially a statified random sample of the dataset.
+More specifically, I decided to only work with L1s that had at least 30 speakers and the proficiency levels low-intermediate and higher to limit the size of the final dataset and to ensure that there were enough samples of any L1 and proficiency level.
+I also filtered for the essays of 10 students from each L1 and proficiency level to further limit the size of the dataset and to ensure more equal representation of L1s and proficiency levels.
+I ultimately ended up with a dataset of 4,341 essays, which is about 1/10th of the size of the original—a significant reduction.
