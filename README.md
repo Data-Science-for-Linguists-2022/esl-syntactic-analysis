@@ -21,3 +21,23 @@ The goal is to determine how quantitative measures of syntactic complexity diffe
 |--README.md                    # This README file
 |--taassc-prep.ipymb            # Exploratory data analysis of TAASSC output
 ```
+
+## Glossary
+
+- TAASSC: The Tool for the Automatic Analysis of Syntactic Sophistication and Complexity (TAASSC) is a program that calculates numerical measures of syntactic complexity.
+
+- T-unit: A T-unit is a generalization of a sentence. More specifically, a T-unit consists of an independent clause and all of its associated dependent clauses:
+  - "Because the sentence only has one independent clause, it has one T-unit." has one T-unit.
+  - "This is a compound sentence because it has two independent clauses; as a result, it has two T-units." has two T-units.
+
+## References
+
+Juffs, A., Han, N-R., & Naismith, B. (2020). The University of Pittsburgh English Language Corpus (PELIC) [Data set]. http://doi.org/10.5281/zenodo.3991977
+
+Kyle, K. (2006). *Measuring syntactic development in L2 writing: Fine grained indices of syntactic complexity and usage-based indices of syntactic sophistication*. (Doctoral dissertation).
+
+Lu, X. (2010). Automatic analysis of syntactic complexity in second language writing. International Journal of Corpus Linguistics, 15(4):474-496.
+
+## License
+
+TBD
