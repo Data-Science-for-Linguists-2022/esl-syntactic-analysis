@@ -77,7 +77,17 @@ The previous progress report focused on the initial exploration of TAASSC and th
 During the exploratory analysis of the syntactic measures, I made sure to note outliers, as the previous progress report indicated that they may have been incorrectly parsed by TAASSC.
 The sensitivity of this program to ESL English is something that I'll just have to live with (and something that I plan to note in my final presentation).
 
+`prepare-final-data.ipynb` contains the code and commentary regarding my preparation of the final dataset.
 Since TAASSC would be so incredibly slow to process the entire PELIC dataset, I ultimately decided to only work with what's essentially a statified random sample of the dataset.
 More specifically, I decided to only work with L1s that had at least 30 speakers and the proficiency levels low-intermediate and higher to limit the size of the final dataset and to ensure that there were enough samples of any L1 and proficiency level.
 I also filtered for the essays of 10 students from each L1 and proficiency level to further limit the size of the dataset and to ensure more equal representation of L1s and proficiency levels.
 I ultimately ended up with a dataset of 4,341 essays, which is about 1/10th of the size of the original—a significant reduction.
+Nevertheless, it still took TAASSC *hours* to process all of the essays.
+This is definitely something that I'll note in my final presentation.
+
+`final-analysis.ipynb` contains the code and commentary for the data analysis of the final dataset, including both exploratory data analysis and statistical analysis.
+Currently, only the exploratory data analysis is complete, but the analysis has not only revealed potentially statistically significant results (which would have to be confirmed with statistical tests) but also a significant outlier in the data that should be noted.
+More specifically, it appears that the random sampling performed in `prepare-final-data.ipynb` has resulted in significantly more essays by advanced Korean speakers than those by any other group because one advanced Korean student whom was selected had significantly more essays than any other advanced Korean student.
+
+I've also finally added the proper license for the project and significantly expanded upon the README.
+The README now contains more detailed information about my project as well as table of contents and a glossary of terms used throughout the repo.
