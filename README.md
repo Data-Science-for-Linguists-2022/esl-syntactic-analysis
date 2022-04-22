@@ -31,6 +31,7 @@ Data samples for both PELIC and TAASSC used in the analysis can be found under `
 |--data-overview.ipynb          # Initial exploratory data analysis
 |--LICENSE.md                   # License for project
 |--prepare-final-data.ipynb     # Preparation of final dataset
+|--presentation.pptx			# Project presentation
 |--progress-report.md           # Progress reports for project
 |--project-plan.md              # Initial description of project plans
 |--README.md                    # This README file
