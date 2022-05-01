@@ -70,6 +70,9 @@ Kyle 2020 does not explicitly state what is considered a discourse marker (such 
 My first step in the computation process is exploratory data analysis of the PELIC dataset, which I performed in [data-overview.ipynb](https://nbviewer.org/github/Data-Science-for-Linguists-2022/esl-syntactic-analysis/blob/main/data-overview.ipynb).
 This portion of the project was relatively simple as I just generated some basic statistics about the dataset and visualized them using some plots to get a better idea of the distribution of the data.
 It was in this portion of the project that I learned that the distribution of L1s in the dataset was highly skewed, with the dataset being heavily dominated by Arabic, Chinese, and Korean speakers; this fact would come in handy for me later in the project when I stratify and sample from the dataset.
+
+![Distribution of L1s](images/l1.png)
+
 I also generated a small sample of the dataset (100 entries) to be used for experimentation in the next step of the project.
 
 After my initial exploratory data analysis, my next step was to prepare the writing samples for TAASSC to generate their syntactactic measures, which I performed in [taassc-prep.ipynb](https://nbviewer.org/github/Data-Science-for-Linguists-2022/esl-syntactic-analysis/blob/main/taassc-prep.ipynb).
@@ -77,6 +80,8 @@ Before attempting to process the entire dataset using TAASSC, I first experiment
 It was in this portion of the project, while trying to process samples of the dataset of varying sizes using TAASSC, that I realized that TAASSC was incredibly inefficient both in terms of runtime and memory.
 Furthermore, I realized that TAASSC was also somewhat sensitive to quirks of non-native writing, specifically to things such as irregular punctuation and sentence fragments.
 This became particularly obvious when I visualized the TAASSC results in [taassc-prep.ipynb#TAASSC-Processing](https://nbviewer.org/github/Data-Science-for-Linguists-2022/esl-syntactic-analysis/blob/main/taassc-prep.ipynb#TAASSC-Processing) and spotted many "outliers" that were in actuality essays that TAASSC struggled to process correctly.
+
+![Outliers](images/mean-length-t-units.png)
 
 There were a couple potential remedies to these issues that I'd considered but ultimately decided against implementing.
 Regarding the issue of slow processing time, I've considered delegating the TAASSC processing pipeline to the Center for Research Computing (CRC)'s cloud computing resources, but this was something that I've never managed to figure out how to make work.
@@ -98,6 +103,13 @@ Most notably, the "outliers" caused by TAASSC's sensitivity to some quirks of no
 
 I had originally planned to stop my analysis at the exploratory data analysis and visualizations due to the potential for outliers to skew the results of statistical tests, but I decided to continue with some basic statistical analyses after following some recommendations that Sean had provided during my presentation.
 Following Sean's advice, I decided to filter for the middle 90% of data points (in other words, excluding anything below the 5th percentile and anything above the 95th percentile) while analyzing each statistical measure.
+
+For example, this is how the distribution of values for the number of T-units per sentence became more regular following the filtering process:
+
+![Before filtering](images/t-units.png)
+
+![After filtering](images/t-units-filtered.png)
+
 Although I was technically excluding reasonable essays that should not have been considered outliers, it still did a reasonable job of reducing the significant skew in the data, which gave me confidence to continue with statistical testing.
 My process for cleaning the data and running statistical tests for each measure can be found in [final-analysis.ipynb#Analysis-of-Syntactical-Measures-by-L1](https://nbviewer.org/github/Data-Science-for-Linguists-2022/esl-syntactic-analysis/blob/main/final-analysis.ipynb#Analysis-of-Syntactical-Measures-by-L1).
 To determine whether a measure varied significantly between L1s, I simply performed one-way ANOVA tests, and to determine whether a measure on average differed significantly between proficiency levels within an L1, I simply performed one-sided two-sample t-tests.
