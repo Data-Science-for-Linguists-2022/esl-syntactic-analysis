@@ -2,6 +2,8 @@
 
 Tianyi Zheng, tiz65@pitt.edu, May 1, 2022
 
+**For my final report for this project, see [`final_report.md`](https://github.com/Data-Science-for-Linguists-2022/esl-syntactic-analysis/blob/main/final_report.md) ([nbviewer version](https://nbviewer.org/github/Data-Science-for-Linguists-2022/esl-syntactic-analysis/blob/main/final_report.md))**
+
 For fellow LING 1340 students, here's a link to my [guestbook](https://github.com/Data-Science-for-Linguists-2022/Class-Lounge/blob/main/guestbooks/guestbook_tianyi.md).
 
 This final project for LING 1340 (Data Science for Linguists) will analyze written data from ESL learners and identify differences in syntax of different ESL learners based on their native language and proficiency level.
@@ -32,6 +34,7 @@ Data samples for both PELIC and TAASSC used in the analysis can be found under `
 |  |--taassc.csv                # Clause complexity measures for pelic-sample.csv
 |  |--taassc_sca.csv            # SCA complexity measures for pelic-sample.csv
 |--data-overview.ipynb          # Initial exploratory data analysis
+|--final_report.md              # Final report for project
 |--final-analysis.ipynb         # Final data visualization and analysiis
 |--LICENSE.md                   # License for project
 |--prepare-final-data.ipynb     # Preparation of final dataset
